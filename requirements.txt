@@ -1,0 +1,5 @@
+Jinja2
+jinja2-fragments
+loguru
+sanic
+sanic_ext

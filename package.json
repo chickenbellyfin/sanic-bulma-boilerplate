@@ -1,0 +1,15 @@
+{
+  "name": "app-name",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.2",
+    "sass": "^1.64.2"
+  },
+  "scripts": {
+    "copydeps": "mkdir -p static && cp assets/* static/",
+    "dev": "yarn run copydeps && esbuild src/index.js --bundle --watch=forever --outfile=static/bundle.js & sass --watch src:static/css ",
+    "build": "yarn run copydeps && sass src:static/css && esbuild src/index.js --bundle --minify --outfile=static/bundle.js"
+  }
+}
