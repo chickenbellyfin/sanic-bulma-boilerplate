@@ -3,6 +3,8 @@
 ## Run
 
 ```
+pip install -r requirements.txt
+
 py -m app
 
 # To work on sass
